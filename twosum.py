@@ -27,35 +27,26 @@ class Solution:
         return index_array
 
 
+
+
+
 class Solution2:
-    def twosum(self, nums: List[int], target: int) -> List[int]:
-        num_indices = {}  # A dictionary to store the indices of numbers seen so far
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        num_indices = {}
 
         for index, num in enumerate(nums):
-            complement = target - num  # Calculate the complement required to reach the target
+            complement = target - num
             if complement in num_indices:
-                # Found a pair that adds up to the target
                 return [num_indices[complement], index]
-            num_indices[num] = index  # Store the current number's index
+            num_indices[num] = index
 
-        # If no valid pair is found, return an empty list
         return []
 
-
-class Solution3:
-    def twosum(self, nums: List[int], target: int) -> List[int]:
-        complement_array = [target - num for num in nums]
-        index_array = []
-        for index, num in enumerate(nums):
-            if num in complement_array:
-                index_array.append(index)
-
-        return index_array
 
 
 if __name__ == "__main__":
     # Create a Solution instance
-    sol = Solution3()
+    sol = Solution2()
 
     # Test case 1
     nums1 = [2, 7, 11, 15]
@@ -63,8 +54,8 @@ if __name__ == "__main__":
     print("Test Case 1:", sol.twosum(nums1, target1))  # Expected output: [0, 1]
 
     # Test case 2
-    nums2 = [3, 2, 4]
-    target2 = 6
+    nums2 = [3, 2, 4, 10, 5]
+    target2 = 9
     print("Test Case 2:", sol.twosum(nums2, target2))  # Expected output: [1, 2]
 
     # Test case 3

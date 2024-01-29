@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7045894-ac33-47c3-8072-c90af22287d2" name="Changes" comment="Added coments two sum">
-      <change afterPath="$PROJECT_DIR$/longestsubstring.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twosumnode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c7045894-ac33-47c3-8072-c90af22287d2" name="Changes" comment="Find lengthOLongestSubstring">
+      <change beforePath="$PROJECT_DIR$/longestsubstring.py" beforeDir="false" afterPath="$PROJECT_DIR$/longestsubstring.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +33,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python tests.Python tests for longestsubstring.TestLongestSubstring.executor": "Run",
+    "Python tests.Python tests for longestsubstring.TestLongestSubstring.executor": "Debug",
     "Python tests.Python tests in longestsubstring.py.executor": "Debug",
     "Python.twosum.executor": "Run",
     "Python.twosumnode.executor": "Run",
@@ -98,7 +96,7 @@
       <workItem from="1706442257198" duration="316000" />
       <workItem from="1706442585328" duration="20915000" />
       <workItem from="1706475632796" duration="2808000" />
-      <workItem from="1706527579872" duration="4640000" />
+      <workItem from="1706527579872" duration="5122000" />
     </task>
     <task id="LOCAL-00001" summary="Arthike LeetCode">
       <option name="closed" value="true" />
@@ -124,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706456382767</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Find lengthOLongestSubstring">
+      <option name="closed" value="true" />
+      <created>1706532332707</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706532332707</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,15 +163,16 @@
     <MESSAGE value="Arthike LeetCode" />
     <MESSAGE value="Arthike LeetCode new solution" />
     <MESSAGE value="Added coments two sum" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added coments two sum" />
+    <MESSAGE value="Find lengthOLongestSubstring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Find lengthOLongestSubstring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/longestsubstring.py</url>
-          <line>21</line>
-          <option name="timeStamp" value="76" />
+          <line>8</line>
+          <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -181,7 +188,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProject$twosumnode.coverage" NAME="twosumnode Coverage Results" MODIFIED="1706466009175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonProject$.coverage" NAME=" Coverage Results" MODIFIED="1706531912478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$.coverage" NAME=" Coverage Results" MODIFIED="1706532679773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$twosum.coverage" NAME="twosum Coverage Results" MODIFIED="1706456260517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

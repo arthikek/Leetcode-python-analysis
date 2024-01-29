@@ -11,8 +11,9 @@ def lengthOfLongestSubstring(s: str) -> int:
             charSet.remove(s[l])
             l += 1
         charSet.add(s[r])
-        res = max(res,r-l+1)
+        res = max(res, r - l + 1)
     return res
+
 
 class TestLongestSubstring(unittest.TestCase):
     def test_longest_substring_with_repeated_chars(self):

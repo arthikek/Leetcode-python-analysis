@@ -40,7 +40,6 @@ def find_median_sorted_arrays(nums1, nums2):
 
     while True:
         index_A_pointer = (l + r) // 2  # We take a guess by finding the middle index
-        print(l,r)
 
         index_B_pointer = partition_half - (
                     index_A_pointer + 1) - 1  # We do this to find how much numbers the a pointer holds then we convert it into an index b pointer
@@ -52,7 +51,7 @@ def find_median_sorted_arrays(nums1, nums2):
         Bright = B[index_B_pointer + 1] if (index_B_pointer + 1) < len(
             B) else math.inf  # Get the right value of the partition
 
-        # Check if the partition is correct oterwise we mode the median to hone in ont he correct value
+        # Check if the partition is correct otherwise we move the median to hone in ont he correct value
         if Aleft <= Bright and Bleft <= Aright:
             if total % 2 == 0:
                 median = (max(Aleft, Bleft) + min(Aright, Bright)) / 2

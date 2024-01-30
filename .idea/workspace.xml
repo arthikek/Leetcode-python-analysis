@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7045894-ac33-47c3-8072-c90af22287d2" name="Changes" comment="Find lengthOLongestSubstring">
-      <change afterPath="$PROJECT_DIR$/findmedian.py" afterDir="false" />
+    <list default="true" id="c7045894-ac33-47c3-8072-c90af22287d2" name="Changes" comment="Find Median">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findmedian.py" beforeDir="false" afterPath="$PROJECT_DIR$/findmedian.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +116,7 @@
       <workItem from="1706442585328" duration="20915000" />
       <workItem from="1706475632796" duration="2808000" />
       <workItem from="1706527579872" duration="6432000" />
-      <workItem from="1706603462335" duration="7232000" />
+      <workItem from="1706603462335" duration="7674000" />
     </task>
     <task id="LOCAL-00001" summary="Arthike LeetCode">
       <option name="closed" value="true" />
@@ -166,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706533083364</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Find Median">
+      <option name="closed" value="true" />
+      <created>1706612467543</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706612467543</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +208,8 @@
     <MESSAGE value="Arthike LeetCode new solution" />
     <MESSAGE value="Added coments two sum" />
     <MESSAGE value="Find lengthOLongestSubstring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Find lengthOLongestSubstring" />
+    <MESSAGE value="Find Median" />
+    <option name="LAST_COMMIT_MESSAGE" value="Find Median" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

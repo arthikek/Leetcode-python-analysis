@@ -6,7 +6,7 @@ import math
 def find_median_sorted_arrays(nums1, nums2):
     A, B = nums1, nums2
     total = len(A) + len(B)
-    partition_half = total // 2
+    partition_half = math.ceil(total /2)
 
     if len(B) < len(A):
         A, B = B, A
@@ -58,7 +58,7 @@ def find_median_sorted_arrays(nums1, nums2):
                 median = (max(Aleft, Bleft) + min(Aright, Bright)) / 2
                 return median
             else:
-                median = min(Aright, Bright)
+                median = max(Aleft, Bleft) #The reason why we always need to ahve the right parition is that we are always rounding down when we compute the parition half
                 return median
         if Aleft > Bright:
             r = index_A_pointer - 1

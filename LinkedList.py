@@ -70,47 +70,89 @@ class LinkedListClass:
             Node.next = None
             self.length -= 1
 
+    #Challenge build the list up by reverse
+    def reverse(self):
+        temp_values = [0] * self.length
+        current_node = self.head
+
+        for i in reversed(range(self.length)):
+            temp_values[i] = current_node.value
+            current_node = current_node.next
+
+        ll = LinkedListClass()
+
+        for index, value in enumerate(temp_values):
+            ll.append(temp_values[index])
+
+        self.head = None
+        self.tail = None
+        self.length = 0
+
+        return ll
+
+
+def linked_list_to_list(linked_list):
+    output = []
+    current_node = linked_list.head
+    while current_node:
+        output.append(current_node.value)
+        current_node = current_node.next
+    return output
+
 
 class TestLinkedListClass(unittest.TestCase):
     def setUp(self):
         self.ll = LinkedListClass()
 
-    def linked_list_to_list(self, linked_list):
-        output = []
-        current_node = linked_list.head
-        while current_node:
-            output.append(current_node.value)
-            current_node = current_node.next
-        return output
-
     def test_append(self):
         self.ll.append(1)
         self.assertEqual(self.ll.tail.value, 1)
         self.assertEqual(self.ll.length, 1)
-        self.assertEqual(self.linked_list_to_list(self.ll), [1])
+        self.assertEqual(linked_list_to_list(self.ll), [1])
 
         self.ll.append(2)
         self.assertEqual(self.ll.tail.value, 2)
         self.assertEqual(self.ll.length, 2)
-        self.assertEqual(self.linked_list_to_list(self.ll), [1, 2])
+        self.assertEqual(linked_list_to_list(self.ll), [1, 2])
 
     def test_prepend(self):
         self.ll.prepend(1)
         self.assertEqual(self.ll.head.value, 1)
         self.assertEqual(self.ll.length, 1)
-        self.assertEqual(self.linked_list_to_list(self.ll), [1])
+        self.assertEqual(linked_list_to_list(self.ll), [1])
 
         self.ll.prepend(0)
         self.assertEqual(self.ll.head.value, 0)
         self.assertEqual(self.ll.length, 2)
-        self.assertEqual(self.linked_list_to_list(self.ll), [0, 1])
+        self.assertEqual(linked_list_to_list(self.ll), [0, 1])
 
     def test_insert(self):
         self.ll.append(1)
         self.ll.append(3)
         self.ll.insert(2, 1)  # Assuming the insert method signature is insert(value, position)
         self.assertEqual(self.ll.length, 3)
-        self.assertEqual(self.linked_list_to_list(self.ll), [1, 2, 3])
+        self.assertEqual(linked_list_to_list(self.ll), [1, 2, 3])
+
+    def test_reverse(self):
+        # Create a sample linked list
+        self.ll.append(1)
+        self.ll.append(2)
+        self.ll.append(3)
+
+        # Reverse the linked list and get the reversed instance
+        reversed_ll = self.ll.reverse()
+
+        # Check that the original linked list is still empty
+        self.assertEqual(self.ll.length, 0)
+        self.assertIsNone(self.ll.head)
+        self.assertIsNone(self.ll.tail)
+
+        # Check that the reversed linked list is correct
+        self.assertEqual(reversed_ll.length, 3)
+
+        # Check the values in the reversed linked list
+        self.assertEqual(linked_list_to_list(reversed_ll), [3, 2, 1])
+
 
 if __name__ == "__main__":
     unittest.main()
